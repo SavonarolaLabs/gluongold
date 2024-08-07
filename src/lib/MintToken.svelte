@@ -4,21 +4,18 @@
 	let mode = 'broke';
 </script>
 
-<div class="flex flex-col items-center">
+<div class="flex flex-col items-center" style="">
 	<!-- <img src="catcoin.png" alt="" /> -->
-	<div id="minter" class="flex flex-col gap-1 border-2 rounded-xl p-2">
+	<div id="minter" class="flex flex-col gap-1 rounded-xl p-2">
 		<div id="swap" class="flex flex-col relative">
-			<div class="group border-2 rounded-xl p-4">
+			<div class="input-container group rounded-xl p-4">
 				<input type="text" class="font-normal text-xl w-full px-1" value="100" style="z-index:1;" />
 				<Dropdown></Dropdown>
 			</div>
-			<div
-				class="group border-2 rounded-xl p-4"
-				style="z-index:2;background:white; margin-top:-2px"
-			>
+			<div class="input-container group rounded-xl p-4 mt-1">
 				<div class="flex items-center mt-2 font-normal">
 					<input type="text" class="w-full px-1" value="0,387007058 GAU" />
-					<span class="text-slate-500">+</span>
+					<span style="color:#ddd">+</span>
 					<input type="text" class="w-full px-1 text-end" value="0,157624107 GAUC" />
 				</div>
 			</div>
@@ -31,7 +28,7 @@
 						height="14"
 						viewBox="0 0 24 24"
 						fill="none"
-						stroke="#777"
+						stroke="#ddd"
 						stroke-width="3.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
@@ -42,8 +39,8 @@
 			</div>
 		</div>
 		<div
-			class="font-normal w-full hints p-4 flex flex-col gap-2 text-slate-700"
-			style="font-family: 'Open Sans', sans-serif; border:none"
+			class="input-container font-normal w-full hints p-4 flex flex-col gap-2 text-slate-700"
+			style="font-family: 'Open Sans', sans-serif; color: rgba(255, 255, 255, 0.9);"
 		>
 			<div class="ml-2">GAU is pegged to 1 gram of Gold.</div>
 			<div class="ml-2">
@@ -55,15 +52,20 @@
 </div>
 
 <style lang="postcss">
+	input {
+		background-color: transparent;
+		color: rgba(255, 255, 255);
+	}
+	.input-container {
+		background-color: #997f3e;
+	}
 	.hints {
-		border: 2px solid var(--cl-light-gray);
 		border-radius: 15px;
-		background-color: var(--cl-yellow);
 	}
 
 	#minter {
 		width: 400px;
-		background: white;
+		background: rgba(0, 0, 0, 0.3);
 	}
 
 	img {
@@ -87,11 +89,11 @@
 	.circle {
 		width: 42px;
 		height: 42px;
-		border-width: 2px; /* top right bottom left */
+		border-width: 3px; /* top right bottom left */
 		border-style: solid;
-		border-color: var(--cl-light-gray);
+		border-color: #705d2f;
 		border-radius: 50%;
-		background-color: white;
+		background: #997f3e;
 		display: flex;
 		align-items: center;
 		justify-content: center;

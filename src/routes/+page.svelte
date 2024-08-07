@@ -7,7 +7,7 @@
 <div class="h-full w-full flex flex-col items-center" style="height:100vh;">
 	<Navbar></Navbar>
 	<div class="h-full w-full flex flex-col items-center justify-center">
-		<div class="mb-6" style="font-size:40px;margin-top:-10vh;">
+		<div class="text-slate-100 mb-6" style="font-size:40px;margin-top:-20vh;">
 			<div>Gluon-Based Gold</div>
 			<div>Stablecoins on Ergo</div>
 		</div>

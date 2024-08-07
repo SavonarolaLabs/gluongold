@@ -1,30 +1,15 @@
 <div class="p-4 px-6 absolute bottom-0 w-full flex gap-3 justify-between font-normal">
-	<div class="flex gap-4">
+	<div class="text-white flex gap-4">
 		<div>Github</div>
 		<div>KYA</div>
 	</div>
-	<div class="text-slate-500">TVL: $500M, secured by Ergo</div>
-	<div class="flex gap-1 items-center text-sm">
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="20px"
-			height="20px"
-			viewBox="0 0 24 24"
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-			stroke-linecap="round"
-			stroke-linejoin="round"
-			class="feather feather-box"
-			><path
-				d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-			></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line
-				x1="12"
-				y1="22.08"
-				x2="12"
-				y2="12"
-			></line></svg
-		>
-		1,315,802
+	<div class="text-slate-200">Secured by Ergo</div>
+	<div
+		class="text-slate-700 flex gap-1 items-center text-sm flex items-center justify-center"
+		style="
+		border: 1px solid black;
+		width:30px;height:30px;"
+	>
+		Au
 	</div>
 </div>
