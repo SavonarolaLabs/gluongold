@@ -1,10 +1,13 @@
 <script>
+	import Dropdown from './Dropdown.svelte';
+
 	let mode = 'broke';
 </script>
 
 <div class="flex flex-col items-center" style="margin-top:-50px;">
-	<img src="catcoins.png" alt="" />
+	<!-- <img src="catcoin.png" alt="" /> -->
 	<div id="minter" class="flex flex-col gap-4 border-2 rounded-xl p-5">
+		<div class="w-full text-left ml-2 text-2xl">Buy Gold</div>
 		<div id="swap" class="flex flex-col relative">
 			<div class="group border-2 rounded-xl p-4">
 				<input type="text" class="my-1 w-full px-1" value="100" style="z-index:1;" />
@@ -21,6 +24,7 @@
 						><path d="M0.97168 1L6.20532 6L11.439 1" stroke="black" stroke-width="1.5"></path></svg
 					></button
 				>
+				<Dropdown></Dropdown>
 			</div>
 			<div
 				class="group border-2 rounded-xl p-4"
