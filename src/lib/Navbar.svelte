@@ -3,12 +3,12 @@
 </script>
 
 <div
-	class="w-full bg-yellow shadow-bot px-4 rounded-xl flex justify-between items-center"
-	style="min-height:100px; border-color: #333; border-width: 4px;"
+	class="bg-whitept-2 px-6 font-normal w-full flex justify-between items-center"
+	style="min-height:100px; border-bottom:2px solid var(--cl-light-gray);"
 >
 	<div class="text-2xl flex items-center brand-font" style="font-size:40px">
 		<Kitty></Kitty>
-		<div class="mb-1 ml-2" style="color:#E8C019;">Gluon Gold</div>
+		<div class="mb-1 ml-2 font-thin" style="font-family: 'Open Sans';">Gluon Gold</div>
 	</div>
 
 	<div class="flex items-center gap-6">
@@ -16,5 +16,5 @@
 		<div>FAQ</div>
 	</div>
 
-	<div class="btn_active mr-2" style="box-shadow: 6px 6px 0 #FFDA4A;">Connect</div>
+	<div class="btn_active mr-2">Connect</div>
 </div>

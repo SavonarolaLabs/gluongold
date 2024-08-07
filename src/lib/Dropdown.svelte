@@ -36,7 +36,7 @@
 		on:mouseleave={handleMouseLeave}
 	>
 		<div>
-			<button class="flex items-center btn_active"
+			<button class="flex items-center btn_active" style="border:none;"
 				><span class="mr-2 pl-2">ERG</span>
 				<svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"
 					><path d="M0.97168 1L6.20532 6L11.439 1" stroke="black" stroke-width="1.5"></path></svg

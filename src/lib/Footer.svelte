@@ -1,8 +1,9 @@
-<div class="p-4 absolute bottom-0 w-full flex gap-3 justify-between">
+<div class="p-4 px-6 absolute bottom-0 w-full flex gap-3 justify-between font-normal">
 	<div class="flex gap-4">
 		<div>Github</div>
 		<div>KYA</div>
 	</div>
+	<div class="text-slate-500">TVL: $500M, secured by Ergo</div>
 	<div class="flex gap-1 items-center text-sm">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

@@ -4,33 +4,19 @@
 	let mode = 'broke';
 </script>
 
-<div class="flex flex-col items-center" style="margin-top:-50px;">
+<div class="flex flex-col items-center">
 	<!-- <img src="catcoin.png" alt="" /> -->
-	<div id="minter" class="flex flex-col gap-4 border-2 rounded-xl p-5">
-		<div class="w-full text-left ml-2 text-2xl">Buy Gold</div>
+	<div id="minter" class="flex flex-col gap-1 border-2 rounded-xl p-2">
 		<div id="swap" class="flex flex-col relative">
 			<div class="group border-2 rounded-xl p-4">
-				<input type="text" class="my-1 w-full px-1" value="100" style="z-index:1;" />
-				<button
-					class="flex items-center btn_active absolute"
-					style="right:10px; top:13px; box-shadow:none"
-					><span class="mr-2 pl-2">ERG</span>
-					<svg
-						width="12"
-						height="7"
-						viewBox="0 0 12 7"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-						><path d="M0.97168 1L6.20532 6L11.439 1" stroke="black" stroke-width="1.5"></path></svg
-					></button
-				>
+				<input type="text" class="font-normal text-xl w-full px-1" value="100" style="z-index:1;" />
 				<Dropdown></Dropdown>
 			</div>
 			<div
 				class="group border-2 rounded-xl p-4"
-				style="border-color: var(--cl-gray);z-index:2;background:white;"
+				style="z-index:2;background:white; margin-top:-2px"
 			>
-				<div class="flex items-center mt-2">
+				<div class="flex items-center mt-2 font-normal">
 					<input type="text" class="w-full px-1" value="0,387007058 GAU" />
 					<span class="text-slate-500">+</span>
 					<input type="text" class="w-full px-1 text-end" value="0,157624107 GAUC" />
@@ -40,7 +26,6 @@
 			<div class="absolute-center">
 				<div class="text-slate-500 circle flex items-center justify-center">
 					<svg
-						style="margin-left:-1px"
 						xmlns="http://www.w3.org/2000/svg"
 						width="14"
 						height="14"
@@ -56,24 +41,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="group w-full hints p-4 flex flex-col gap-2 text-slate-800">
+		<div
+			class="font-normal w-full hints p-4 flex flex-col gap-2 text-slate-700"
+			style="font-family: 'Open Sans', sans-serif; border:none"
+		>
 			<div class="ml-2">GAU is pegged to 1 gram of Gold.</div>
 			<div class="ml-2">
 				GAUC is volatile, it gives leveraged exposure to ERG and protocol fees.
 			</div>
 		</div>
-		<button class="btn rounded-xl mt-5">swap</button>
+		<button class="btn rounded-xl">swap</button>
 	</div>
 </div>
 
 <style lang="postcss">
-	.group {
-		border-color: var(--cl-gray);
-		box-shadow: 4px 4px 0px #333;
-	}
-
 	.hints {
-		border: 2px solid #333;
+		border: 2px solid var(--cl-light-gray);
 		border-radius: 15px;
 		background-color: var(--cl-yellow);
 	}
@@ -81,9 +64,6 @@
 	#minter {
 		width: 400px;
 		background: white;
-		border-color: #333;
-		border-width: 4px;
-		box-shadow: 8px 8px 0px #333;
 	}
 
 	img {
@@ -107,9 +87,9 @@
 	.circle {
 		width: 42px;
 		height: 42px;
-		border-width: 5px 2px 2px 5px; /* top right bottom left */
+		border-width: 2px; /* top right bottom left */
 		border-style: solid;
-		border-color: #333;
+		border-color: var(--cl-light-gray);
 		border-radius: 50%;
 		background-color: white;
 		display: flex;

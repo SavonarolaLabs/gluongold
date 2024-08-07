@@ -7,7 +7,7 @@
     --cl-yellow: #fafbea;
     --cl-green: #62cd62;
     --cl-pink: #FF99C8;
-    --cl-light-gray: #747474;
+    --cl-light-gray: #c4c4c4;
     --cl-gray: #333;
     --cl-gold-yellow: #FFDA4A;
 }
@@ -33,35 +33,28 @@ html, body{
     margin: 0;
     min-height: 100vh;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-
-    border-color: var(--cl-gray);
+    /* font-family: 'Open Sans'; */
+    font-weight: 600;
+    background: linear-gradient(to bottom, #f9f8f1, #fff9e6, #fff5d6);
 }
 
-.shadow-bot {
-    box-shadow: 0px 6px 0px #333;
-}
 
-.shadow-bot-left {
-    box-shadow: 6px 6px 0px #333;
-}
 
 .btn{
     border: 2px solid black;
     height: 3em;
+    text-transform: uppercase;
     background-color: var(--cl-gold-yellow);
-    box-shadow: 4px 4px 0px #333;
 }
 
 .btn_active {
-    border: 2px solid var(--cl-gray);
+    border: 2px solid var(--cl-light-gray);
     border-radius: 12px;
     padding: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
     box-shadow: 2px;
     background: white;
-    box-shadow: 4px 4px 0 #33333367;
 }
 
 textarea:focus, input:focus{
